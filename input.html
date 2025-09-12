@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriOptima | Farm Input</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="input.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="AgriOptima Logo">
+    </div>
+    <div class="nav-buttons">
+      <a href="index.html" class="home-btn">Home</a>
+      <a href="login.html" class="login-btn">Login</a>
+    </div>
+  </header>
+
+  <!-- Farm Info Section -->
+  <section class="farm-info">
+    <h2>Farm Information</h2>
+    <p>Please provide your farm details to get accurate yield predictions</p>
+
+    <div class="farm-card">
+      <h3>🌱 Farm Details</h3>
+      <p class="info-note">All information is required for accurate predictions</p>
+
+      <form action="#" method="post" class="farm-form">
+        <div class="form-group">
+          <label>📏 Farm Size (acres)</label>
+          <input type="number" placeholder="e.g., 5.5" required>
+        </div>
+
+        <div class="form-group">
+          <label>🌍 Soil Type</label>
+          <select required>
+            <option>Clay</option>
+            <option>Sandy</option>
+            <option>Loam</option>
+            <option>Silt</option>
+            <option>Peat</option>
+            <option>Chalky</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>🌾 Rice Variety</label>
+          <select required>
+            <option>Basmati</option>
+            <option>Jasmin</option>
+            <option>Long Grain</option>
+            <option>Short Grain</option>
+            <option>Brown Rice</option>
+            <option>Wild Rice</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>📅 Sowing Date</label>
+          <input type="date" required>
+        </div>
+
+        <div class="form-group full-width">
+          <label>🧪 Fertilizer Type</label>
+          <select required>
+            <option>Nitrogenous</option>
+            <option>Phosphatic</option>
+            <option>Potassic</option>
+            <option>Complex/NPK</option>
+            <option>Urea</option>
+            <option>Organic Compost</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit">Generate Yield Prediction</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
